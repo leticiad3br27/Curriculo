@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Leticia Silva Almeida</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Definindo paleta de cores com tons de cinza-azulado */
+        :root {
+            --cor-primaria: #607d8b; /* Cinza-azulado */
+            --cor-secundaria: #4b6473; /* Tom mais escuro */
+            --cor-background: #f2f8fb; /* Cinza bem claro */
+            --cor-texto: #333333;
+            --cor-link: #1e88e5;
+            --cor-link-hover: #155a8a;
+            --cor-footer: #2c3e50;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-background);
+            color: var(--cor-texto);
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            text-align: center;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: var(--cor-secundaria);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: var(--cor-texto);
+        }
+
+        footer {
+            background-color: var(--cor-footer);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+
+        /* Estilos para a foto */
+        .foto-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .foto-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--cor-primaria);
+        }
+
+        .menu-lateral {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--cor-primaria);
+            color: white;
+            width: 250px;
+            height: 100%;
+            transform: translateX(-250px);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-lateral.active {
+            transform: translateX(0);
+        }
+
+        .menu-toggle {
+            font-size: 30px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu-lateral h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+
+        .menu-lateral ul {
+            padding-left: 20px;
+        }
+
+        .menu-lateral ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .menu-lateral ul li a:hover {
+            color: var(--cor-link-hover);
+        }
+
+        /* Links */
+        a {
+            color: var(--cor-link);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--cor-link-hover);
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--cor-primaria);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: var(--cor-secundaria);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Currículo - Leticia Silva Almeida</h1>
+        <button class="menu-toggle" id="open-menu">&#9776;</button>
+    </header>
+
+    <main>
+        <!-- Seção para a foto -->
+        <section class="foto-container">
+            <img src="Captura de tela 2025-01-06 154738.png" alt="Foto de Leticia Silva Almeida">
+        </section>
+
+        <section>
+            <h2>Resumo Profissional</h2>
+            <p>Sou estudante do curso Técnico em Informática no Instituto Federal de Rondônia. Tenho experiência com desenvolvimento web (Frontend e Backend), manutenção de sistemas e hardware, além de um bom relacionamento com clientes. Busco sempre aplicar meus conhecimentos em projetos criativos e de impacto.</p>
+        </section>
+
+        <section>
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li><strong>Cursando 2º ano do curso integrado ao ensino médio com Técnico em Informática</strong> - Instituto Federal de Rondônia, Campus Vilhena (2023 - 2025).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li><strong>Desenvolvimento Web:</strong> HTML, CSS, JavaScript, Python, Node.js.</li>
+                <li><strong>Desenvolvimento Backend:</strong> Banco de dados MySQL, SQLite, APIs RESTful.</li>
+                <li><strong>Manutenção de Sistemas e Hardware:</strong> Diagnóstico e reparo de computadores, instalação de sistemas operacionais e softwares.</li>
+                <li><strong>Design Gráfico:</strong> Photoshop, Canva.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experiência Profissional</h2>
+            <ul>
+                <li><strong>Monitoria em curso de Informática Básica para crianças</strong> - 80 horas (Ensino de conceitos de informática e auxílio em projetos práticos para crianças de escolas públicas).</li>
+                <li><strong>Estágio no Colégio Almirante Tamandaré</strong> - 137 horas (Suporte técnico, manutenção de equipamentos, desenvolvimento de soluções informáticas simples e administrativas).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Cursos Complementares</h2>
+            <ul>
+                <li><strong>Montagem e Manutenção de Computadores</strong> - SENAI (80 horas).</li>
+                <li><strong>Curso de curta duração: Big Data</strong> - IFRO(20 horas).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certificados</h2>
+            <ul>
+                <li><strong>Certificado de Monitoria</strong> - Instituto Federal de Rondônia (80 horas).</li>
+                <li><strong>Certificado de Estágio</strong> - Colégio Almirante Tamandaré (137 horas).</li>
+            </ul>
+        </section>
+
+        <section>
+            <a href="https://github.com/leticiad3br27" class="button" target="_blank" style="margin-top: 10px;">Veja meu GitHub</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Leticia Silva Almeida</p>
+    </footer>
+
+    <div class="menu-lateral" id="menu">
+        <button class="menu-toggle" id="close-menu">&times;</button>
+        <h3>Contato</h3>
+        <ul>
+            <li><a href="https://instagram.com/leticiiaa_ap" target="_blank">Instagram</a></li>
+            <li><a href="https://wa.me/69992903194" target="_blank">WhatsApp</a></li>
+            <li><a href="mailto:almeida.leticia@estudante.ifro.edu.br">Email</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById("open-menu");
+        const closeMenu = document.getElementById("close-menu");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    </script>
+</body>
+</html>
